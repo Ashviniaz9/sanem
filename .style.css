@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing+Script";
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.showcase img {
+  position: static;
+  top: 100px;
+  right: 21px;
+  width: 700px;
+  height: 700px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffffe;
+  mix-blend-mode: overlay;
+}
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 100px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 2em;
+  text-transform: uppercase;
+  text-decoration: double;
+}
+.text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-underline-position: below;
+}
+.text p {
+  font-size: 2em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 300;
+  max-width: 800px;
+  letter-spacing: 10px;
+}
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 10px;
+}
